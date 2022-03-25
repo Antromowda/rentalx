@@ -21,11 +21,9 @@
     "prettier"
   ],
   "rules": {
-    "commonjs": true,
-    "amd": true,
     "prettier/prettier": "error",
     "camelcase": "off",
-    "import/no-unresolved": "error",
+    "import/no-unresolved": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -66,7 +64,9 @@
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   }
 }
